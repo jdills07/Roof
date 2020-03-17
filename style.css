@@ -1,0 +1,504 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 10px;
+     scroll-behavior: smooth;
+ }  
+
+ img {
+     width: 100%;
+     height: auto;
+ }
+
+ p {
+
+    font-size: 1.6rem;
+ }
+
+ h3 {
+     font-size: 2.5rem;
+     position: relative;
+     text-align: center;
+ }
+
+ nav {
+     width: 100%;
+     height: 5rem;
+     display: flex;
+     position: fixed;
+     position: relative;
+ } 
+
+ .links {
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background-color: #2ECC71;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     z-index: 10;
+     top: 0;
+     right: 0;
+     opacity: 0;
+     transition: .2s ease-in-out;
+ }
+
+ .resp {
+    opacity: 1;
+ }
+
+ .links a {
+     text-decoration: none;
+     font-size: 1.6rem;
+     color: white;
+ }
+
+ .icon i {
+     font-size: 2.5rem;
+     color: white;
+ }
+
+ .open {
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+ }
+ 
+ .close {
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+ }
+
+ header {
+     width: 100%;
+     height: 85vh;
+     background:linear-gradient(0deg, rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(roof.jpg);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: none;
+     position: relative;
+ }
+
+ .header-div {
+     color: white;
+     position: absolute;
+     top: 40%;
+     left: 20%;
+     transform: translate(-20%, -40%);
+ }
+
+ .header-div h1 {
+     font-size: 4rem;
+     text-transform: capitalize;
+ }
+
+ .header-div p {
+     font-size: 2rem;
+ }
+
+ button {
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #3498db;
+    border: none;
+    border-radius: 2rem;
+ }
+
+ button:hover {
+     background: #2ECC71;
+ }
+
+ section {
+     width: 100%;
+ }
+
+ #section-1 {
+     display: flex;
+     flex-direction: column;
+ }
+
+ #section-1-about {
+     text-align: center;
+     padding: 4rem 0;
+ }
+
+ #section-1-about p {
+     padding: 4rem 0;
+ }
+
+ h3::before {
+    content: "";
+    width: 20%;
+    height: .5rem;
+    background-color: tomato;
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ #section-2 {
+     height: auto;
+     background-color: rgba(220, 220, 220, 0.3);
+     padding: 4rem 0;
+ }
+
+ #service-grid {
+     margin-top: 5rem;
+     display: grid;
+ }
+
+.service {
+    position: relative;
+}
+
+.service img {
+    z-index: -5;
+}
+.service p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#section-3 {
+    padding: 4rem 0;
+    
+}
+
+#project-grid {
+    margin-top: 5rem;
+    display: grid;
+}
+ 
+#why {
+    padding-top: 3rem;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+#why p {
+    margin-top: 3rem;
+
+}
+
+#why-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+#why-box div {
+    margin: 2rem 0;
+}
+
+#why-box i {
+    font-size: 6rem;
+    color: #2ECC71;
+    margin: 1rem 0;
+}
+
+#why-box h4 {
+    font-size: 2.5rem;
+}
+
+#cta {
+    background:linear-gradient(0deg, rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url(cta.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 65vh;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#cta div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+}
+
+#logo-section {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-section img {
+    margin: 2rem 0;
+}
+
+#prices {
+    padding: 3rem 0;    
+    background-color: rgba(220, 220, 220, 0.3);
+}
+#packages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.prices {
+    text-align: center;
+    margin: 4rem 1rem;
+    padding: 2rem;
+    border: 2px solid #2ECC71;
+    border-radius: 10px;
+}
+
+.service-title {
+    font-size: 2.5rem;
+}
+
+.service-price {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    color: tomato;
+    font-weight: bold;
+}
+
+.service-info {
+    margin-bottom: 2rem;
+}
+
+#contact {
+    background: #2ECC71;
+    padding: 4rem 0;
+}
+
+#contact h3 {
+    color: white;
+}
+#contact-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-info {
+    margin: 3rem auto;
+    color: white;
+}
+
+.contact-info i {
+    color: #3498db;
+    font-size: 4rem;
+    margin: 2rem 1rem;
+}
+
+.contact-info p {
+    vertical-align: middle;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form button {
+    background-color: #2ECC71;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 15px rgba(36, 158, 87, .7),
+    5px 5px 20px rgba(36, 158, 87, 0.7);
+    outline: none;
+}
+
+form button:hover, form button:focus {
+    box-shadow: inset 5px 5px 15px rgb(36, 158, 87),
+    inset 5px 5px 20px rgb(36, 158, 87);
+}
+textarea {
+    width: 90%;
+    margin: .5rem 0;
+    padding: 1.2rem;
+    color: white;
+    font-size: 1.6rem;
+    background: transparent;
+    border: none;
+    border-color: rgba(46, 204, 112, 0.644);
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 15px rgb(36, 158, 87),
+    inset 5px 5px 20px rgb(36, 158, 87);  
+    outline: none;
+}
+input {
+    width: 90%;
+    margin: .5rem 0;
+    padding: 1.2rem;
+    color: white;
+    font-size: 1.6rem;
+    background: transparent;
+    border: none;
+    border-color: rgba(46, 204, 112, 0.644);
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 15px rgb(36, 158, 87),
+    inset 5px 5px 20px rgb(36, 158, 87);
+    outline: none; 
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    color: white;
+}
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 1.6rem;
+}
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+
+@media (min-width: 768px) {
+
+    * {
+        font-size: 11px;
+    }
+    header {
+        height: 80vh;
+    }
+
+    #section-1 {
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    #service-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax(250px);
+        grid-gap: .5rem;
+    }
+
+    .service img {   
+        height: 250px;
+    }
+    #project-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: .5rem;
+    }
+
+    #why {
+        padding: 5rem 1.5rem;
+    }
+    #why-box {
+        flex-direction: row;
+    }
+
+    #why-box div {
+        margin: 0 2rem;
+    }
+
+    #cta {
+        height: 35vh;
+    }
+
+    #cta div {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #logo-section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #logo-section img {
+        height: 15rem;
+        width: auto;
+    }
+
+    h3::before {
+        width: 10%;
+    }
+
+    #packages {
+        flex-direction: row;
+        justify-content: space-between;
+    }   
+
+    #contact-box {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+    }
+
+    .contact-info {
+        width: 40%;
+        margin: 1rem;
+    }
+
+    .contact-form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1025px) {
+    #section-1, #section-2, #section-3, #logo-section, #why, #prices {
+        padding: 8rem 3rem;
+    }
+
+    #project-grid, #service-grid {
+        padding-left:6rem;
+        padding-right: 6rem;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.651);
+        display: none;
+    }
+
+    .service:hover .overlay {
+        display: block;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+     .icon {
+         display: none;
+     }
+    .links {
+        width: 50%;
+        flex-direction: row;
+        opacity: 1;
+        height: 50px;
+        background: none;
+    }
+
+    .links a {
+        font-size: 18px;
+    }
+    
+}
